@@ -20,3 +20,5 @@ The file name "example.in" is already registered in the main function, so there'
 # Question Answers
 ## Q1
 ![Alt text](runtime_graph.png)
+Note: Length of String A is equivalent to length of String B
+
