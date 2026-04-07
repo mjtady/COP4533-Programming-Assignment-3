@@ -38,7 +38,7 @@ The recurrence considers two cases outside of the base cases. When the character
 ## Q3
 
 ```
-Initial dp[len(A+1 x len(B+1)] with 0
+Initialize dp[len(A+1 x len(B+1)] with 0
 
 // this will populate the table
 for i from 1 to len(A)
