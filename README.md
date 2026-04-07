@@ -21,7 +21,7 @@ The file name "example.in" is already registered in the main function, so there'
 ## Q1
 ![Alt text](runtime_graph.png)
 
-Note: Length of String A is equivalent to length of String B
+Note: Length of String A is in range to length of String B
 
 ## Q2
 dp[i][j] will represent the maximum value of a common subsequence between the i characters of A and the j characters of B. 
