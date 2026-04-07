@@ -37,7 +37,7 @@ The recurrence considers two cases outside of the base cases. When the character
 
 ## Q3
 
-Initial dp[len(A+1 x len(B+1)] with 0
+{content: Initial dp[len(A+1 x len(B+1)] with 0
 
 // this will populate the table
 for i from 1 to len(A)
@@ -61,7 +61,7 @@ while i, j > 0
             j = j - 1
 
 
-return dp[m][n], result
+return dp[m][n], result}
 
 let n = the lenghts of A and m = the lengths of B
 O(n x m) would be the overall runtime and space complexity of the code
