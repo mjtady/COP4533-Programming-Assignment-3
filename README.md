@@ -27,11 +27,11 @@ Note: Length of String A is equivalent to length of String B
 dp[i][j] will represent the maximum value of a common subsequence between the i characters of A and the j characters of B. 
 
 The recurrence equation is provided below alongside base cases:
-
+```
 dp[i][j]= { 0 if i = 0, j = 0
             dp[i-1] + v(A[i]) if A[i] = B[j]
             max(dp[i-1][j], dp[i][j-1]) if A[i] != B[j]}
-
+```
 The recurrence considers two cases outside of the base cases. When the characters match, there is a chance to include the character in the subsequence only if it contributes to the maximum total value positively. The best value is whatever is optimal for A[1...i-1] and similarly with B to j-1th character + the value of the current character. If the value of A[i] is 0, then skip. When the characters don't match or the value is 0, we use the best value that comes from skipping the current character in A or B. This covers all possibilities and ll subproblems are solved before they are needed.
 
 
