@@ -11,8 +11,8 @@ for i in range(1, 11):
     
     with open(fname) as f:
         lines = [l.strip() for l in f if l.strip()]
-
-    # Parse K and alphabet values [cite: 15-18, 21-23]
+        
+    # parses input files
     k = int(lines[0])
     char_values = {}
     for j in range(1, k + 1):
@@ -23,7 +23,7 @@ for i in range(1, 11):
     A = lines[k + 1]
     B = lines[k + 2]
 
-    # Time the core algorithm execution
+    # time the core algorithm execution
     start = time.perf_counter()
     value, subseq = HighestValueCommonSubsequence.maximumValue(A, B, char_values)
     elapsed = time.perf_counter() - start
